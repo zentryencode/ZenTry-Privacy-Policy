@@ -7,10 +7,9 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #f7f7f7;
+            background-color: #f5f5f5;
             color: #222;
             margin: 0;
-            padding: 0;
         }
         .container {
             max-width: 900px;
@@ -18,15 +17,14 @@
             background: #ffffff;
             padding: 24px;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #1f2937;
         }
         h1 {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         h2 {
-            margin-top: 30px;
-            font-size: 20px;
+            margin-top: 28px;
         }
         p, li {
             line-height: 1.6;
@@ -43,12 +41,12 @@
             padding: 10px 20px;
             cursor: pointer;
             font-weight: bold;
-            border: none;
             background: none;
+            border: none;
         }
         .tab.active {
-            border-bottom: 3px solid #2563eb;
             color: #2563eb;
+            border-bottom: 3px solid #2563eb;
         }
         .content {
             display: none;
@@ -83,16 +81,16 @@
         <button id="tab-en" class="tab" onclick="switchLang('en')">English</button>
     </div>
 
-    <!-- TR -->
+    <!-- ================= TR ================= -->
     <div id="tr" class="content active">
         <h1>📘 ZenTry – Gizlilik Politikası</h1>
         <p><strong>Güncelleme Tarihi:</strong> 01.01.2026</p>
 
         <p>
-            ZenTry, kullanıcı gizliliğine önem veren bir mobil uygulamadır.
-            Uygulamada işlenen tüm veriler yalnızca cihaz içerisinde tutulur;
-            herhangi bir sunucuya gönderilmez, geliştirici tarafından görüntülenmez
-            veya üçüncü taraflarla paylaşılmaz.
+            ZenTry, kullanıcı gizliliğini esas alan bir mobil uygulamadır.
+            Uygulama tarafından işlenen tüm veriler yalnızca kullanıcının kendi cihazında tutulur.
+            Herhangi bir sunucuya veri gönderimi yapılmaz, geliştirici tarafından görüntülenmez
+            ve üçüncü taraflarla paylaşılmaz.
         </p>
 
         <h2>1. Toplanan Bilgiler</h2>
@@ -103,51 +101,65 @@
             <li>İsteğe bağlı: Ad ve e-mail adresi</li>
             <li>Profil fotoğrafı</li>
         </ul>
-        <p>Bu bilgiler yalnızca cihazda saklanır.</p>
+        <p>Bu bilgiler yalnızca cihaz içinde saklanır.</p>
 
         <h3>1.2 Mesaj İçerikleri</h3>
         <ul>
-            <li>Kullanıcı tarafından yazılan metinler</li>
+            <li>Kullanıcının yazdığı metinler</li>
             <li>Encode / Decode edilen mesajlar</li>
-            <li>Kullanıcının isteğe bağlı kaydettiği tek encode kaydı</li>
+            <li>Kullanıcının isteğe bağlı olarak kaydettiği tek encode kaydı</li>
         </ul>
+        <p>Tüm mesaj işlemleri cihaz içinde ve offline olarak yapılır.</p>
 
-        <h3>1.3 Rehber Bilgileri</h3>
+        <h3>1.3 Rehber Bilgileri (İzin Verilirse)</h3>
         <ul>
             <li>Ad Soyad</li>
             <li>GSM numarası</li>
             <li>E-mail adresi (cihaz destekliyorsa)</li>
         </ul>
+        <p>
+            Rehber bilgileri yalnızca encode işlemlerinde GSM doğrulaması
+            ve hızlı seçim amacıyla kullanılır.
+        </p>
 
         <h3>1.4 Kamera / Galeri</h3>
-        <p>Profil fotoğrafı çekme veya seçme işlemleri.</p>
+        <p>
+            Kamera ve galeri erişimi yalnızca profil fotoğrafı çekmek
+            veya seçmek amacıyla kullanılır.
+            Fotoğraflar cihaz dışına aktarılmaz.
+        </p>
 
-        <h3>1.5 SMS Onay Kodu</h3>
+        <h3>1.5 GSM Doğrulama ve SMS Kullanımı</h3>
         <ul>
-            <li>Onay kodu kullanıcı tarafından manuel girilir</li>
-            <li>Uygulama SMS göndermez veya okumaz</li>
-            <li>READ_SMS / RECEIVE_SMS izinleri kullanılmaz</li>
+            <li>ZenTry, SMS göndermez</li>
+            <li>Uygulama tarafından SMS okunmaz</li>
+            <li>SEND_SMS, READ_SMS ve RECEIVE_SMS izinleri kullanılmaz</li>
+            <li>GSM doğrulaması için kullanıcıya gönderilen onay kodu, kullanıcı tarafından manuel olarak girilir</li>
+            <li>Girilen kod yalnızca cihaz içinde doğrulanır</li>
         </ul>
 
         <h2>2. Verilerin Kullanım Amaçları</h2>
         <ul>
-            <li>Encode / Decode işlemleri</li>
-            <li>Mesaj güvenliği</li>
-            <li>Profil bilgilerinin gösterilmesi</li>
+            <li>Encode / Decode işlemlerini gerçekleştirmek</li>
+            <li>Mesaj güvenliğini sağlamak</li>
+            <li>Profil bilgilerinin uygulama içinde görüntülenmesi</li>
             <li>Rehber üzerinden hızlı GSM seçimi</li>
-            <li>WhatsApp, e-mail veya diğer uygulamalara aktarım</li>
-            <li>GSM onay kodunun doğrulanması</li>
+            <li>WhatsApp, e-mail veya diğer uygulamalara mesaj aktarımı</li>
+            <li>Kullanıcının manuel olarak girdiği GSM doğrulama kodunun kontrolü</li>
         </ul>
 
         <h2>3. Veri Saklama</h2>
         <ul>
-            <li>Tüm veriler cihazda saklanır</li>
-            <li>Sunucuya veri gönderilmez</li>
-            <li>Uygulama silindiğinde tüm veriler silinir</li>
+            <li>Tüm veriler kullanıcının cihazında saklanır</li>
+            <li>Sunucuya gönderilen hiçbir kişisel veri yoktur</li>
+            <li>Uygulama kaldırıldığında tüm veriler silinir</li>
         </ul>
 
         <h2>4. Mesaj Güvenliği</h2>
-        <p>Tüm şifreleme işlemleri offline yapılır.</p>
+        <p>
+            ZenTry’de tüm şifreleme işlemleri offline olarak gerçekleştirilir.
+            Uygulamada loglama, arka kapı veya gizli veri toplama mekanizması bulunmaz.
+        </p>
 
         <h2>5. Üçüncü Taraf Hizmetleri</h2>
         <ul>
@@ -155,34 +167,41 @@
             <li>E-mail uygulamaları</li>
             <li>Diğer paylaşım uygulamaları</li>
         </ul>
+        <p>Bu uygulamalar kendi gizlilik politikalarına tabidir.</p>
 
         <h2>6. Kullanıcı Hakları (KVKK / GDPR)</h2>
         <ul>
-            <li>Verileri görüntüleme</li>
-            <li>Düzeltme</li>
-            <li>Silme</li>
-            <li>Uygulamayı kaldırarak tüm verileri silme</li>
+            <li>Kişisel verilerini görüntüleme</li>
+            <li>Yanlış bilgileri düzeltme</li>
+            <li>Profil ve kayıtlı verileri silme</li>
+            <li>Uygulamayı kaldırarak tüm verileri tamamen silme</li>
         </ul>
 
         <h2>7. Güvenlik</h2>
-        <p>ZenTry, standart mobil güvenlik yöntemlerini kullanır.</p>
+        <p>
+            ZenTry, kullanıcı verilerini cihaz içinde korumak için
+            standart mobil güvenlik yöntemlerini uygular.
+        </p>
 
         <h2>8. Politika Değişiklikleri</h2>
-        <p>Güncellemeler yayınlandığı anda geçerli olur.</p>
+        <p>
+            Gizlilik Politikası gerektiğinde güncellenebilir.
+            Güncellemeler yayınlandığı anda yürürlüğe girer.
+        </p>
 
         <h2>9. İletişim</h2>
         <p>E-mail: <strong>zentryencode@gmail.com</strong></p>
     </div>
 
-    <!-- EN -->
+    <!-- ================= EN ================= -->
     <div id="en" class="content">
         <h1>📘 ZenTry – Privacy Policy</h1>
-        <p><strong>Last Update:</strong> 01.01.2026</p>
+        <p><strong>Last Updated:</strong> 01.01.2026</p>
 
         <p>
-            ZenTry is a mobile application that values user privacy.
-            All data processed by the application remains on the user's device.
-            No data is sent to any server, accessed by the developer,
+            ZenTry is a privacy-focused mobile application.
+            All data processed by the app remains strictly on the user's device.
+            No personal data is transmitted to any server, accessed by the developer,
             or shared with third parties.
         </p>
 
@@ -197,12 +216,13 @@
 
         <h3>1.2 Message Content</h3>
         <ul>
-            <li>User-written text</li>
-            <li>Encoded / Decoded messages</li>
+            <li>User-written messages</li>
+            <li>Encoded / decoded messages</li>
             <li>Optional saved encoded record</li>
         </ul>
+        <p>All processing is performed offline on the device.</p>
 
-        <h3>1.3 Contacts</h3>
+        <h3>1.3 Contacts (If Permitted)</h3>
         <ul>
             <li>Name and surname</li>
             <li>Phone number</li>
@@ -210,34 +230,42 @@
         </ul>
 
         <h3>1.4 Camera / Gallery</h3>
-        <p>Used only for selecting or capturing a profile photo.</p>
+        <p>
+            Used only for capturing or selecting a profile photo.
+            Images are stored locally on the device.
+        </p>
 
-        <h3>1.5 SMS Verification Code</h3>
+        <h3>1.5 GSM Verification and SMS Usage</h3>
         <ul>
-            <li>Verification code is entered manually by the user</li>
-            <li>The app does not send or read SMS</li>
-            <li>READ_SMS / RECEIVE_SMS permissions are not used</li>
+            <li>ZenTry does not send SMS messages</li>
+            <li>The app does not read incoming SMS</li>
+            <li>SEND_SMS, READ_SMS, and RECEIVE_SMS permissions are not used</li>
+            <li>Verification codes are entered manually by the user</li>
+            <li>Verification is performed locally on the device</li>
         </ul>
 
         <h2>2. Purpose of Data Usage</h2>
         <ul>
-            <li>Encode / Decode operations</li>
-            <li>Message security</li>
-            <li>Profile display</li>
-            <li>Quick contact selection</li>
-            <li>Sharing via WhatsApp, email, or other apps</li>
-            <li>Manual GSM verification</li>
+            <li>Perform encode / decode operations</li>
+            <li>Ensure message security</li>
+            <li>Display profile information</li>
+            <li>Enable quick GSM selection from contacts</li>
+            <li>Share messages via WhatsApp, email, or other apps</li>
+            <li>Validate manually entered GSM verification codes</li>
         </ul>
 
         <h2>3. Data Storage</h2>
         <ul>
-            <li>All data is stored on the device</li>
+            <li>All data is stored locally on the device</li>
             <li>No personal data is sent to servers</li>
-            <li>All data is deleted when the app is uninstalled</li>
+            <li>All data is deleted upon app uninstallation</li>
         </ul>
 
         <h2>4. Message Security</h2>
-        <p>All encryption is performed offline on the device.</p>
+        <p>
+            All encryption operations are performed offline.
+            ZenTry does not include logging, backdoors, or hidden data collection.
+        </p>
 
         <h2>5. Third-Party Services</h2>
         <ul>
@@ -249,16 +277,22 @@
         <h2>6. User Rights (GDPR)</h2>
         <ul>
             <li>Access personal data</li>
-            <li>Correct inaccurate data</li>
+            <li>Correct inaccurate information</li>
             <li>Delete stored data</li>
             <li>Remove all data by uninstalling the app</li>
         </ul>
 
         <h2>7. Security</h2>
-        <p>ZenTry applies standard mobile security practices.</p>
+        <p>
+            ZenTry applies standard mobile security practices
+            to protect user data stored on the device.
+        </p>
 
         <h2>8. Policy Changes</h2>
-        <p>Updates take effect immediately upon publication.</p>
+        <p>
+            This Privacy Policy may be updated when necessary.
+            Changes become effective upon publication.
+        </p>
 
         <h2>9. Contact</h2>
         <p>Email: <strong>zentryencode@gmail.com</strong></p>
