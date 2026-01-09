@@ -1,322 +1,187 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>ZenTry Privacy Policy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f5f5;
-            color: #222;
-            margin: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #ffffff;
-            padding: 24px;
-        }
-        h1, h2, h3 {
-            color: #1f2937;
-        }
-        h2 {
-            margin-top: 28px;
-        }
-        p, li {
-            line-height: 1.6;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #e5e7eb;
-            margin: 24px 0;
-        }
-        .tabs {
-            display: flex;
-            border-bottom: 2px solid #ddd;
-            margin-bottom: 20px;
-        }
-        .tab {
-            padding: 10px 20px;
-            cursor: pointer;
-            font-weight: bold;
-            background: none;
-            border: none;
-        }
-        .tab.active {
-            color: #2563eb;
-            border-bottom: 3px solid #2563eb;
-        }
-        .content {
-            display: none;
-        }
-        .content.active {
-            display: block;
-        }
-        .footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #555;
-        }
-    </style>
-    <script>
-        function switchLang(lang) {
-            document.getElementById("tr").classList.remove("active");
-            document.getElementById("en").classList.remove("active");
-            document.getElementById("tab-tr").classList.remove("active");
-            document.getElementById("tab-en").classList.remove("active");
-
-            document.getElementById(lang).classList.add("active");
-            document.getElementById("tab-" + lang).classList.add("active");
-        }
-    </script>
+<meta charset="UTF-8">
+<title>ZenTry – Gizlilik Politikası</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+    h1, h2, h3 {
+        color: #111;
+    }
+    hr {
+        border: none;
+        border-top: 1px solid #e5e7eb;
+        margin: 24px 0;
+    }
+</style>
 </head>
 <body>
 
-<div class="container">
+<h1>ZenTry – Gizlilik Politikası</h1>
 
-    <div class="tabs">
-        <button id="tab-tr" class="tab active" onclick="switchLang('tr')">Türkçe</button>
-        <button id="tab-en" class="tab" onclick="switchLang('en')">English</button>
-    </div>
+<p>ZenTry olarak kullanıcılarımızın gizliliğine önem veriyoruz. Bu Gizlilik Politikası, ZenTry uygulaması kullanılırken hangi bilgilerin toplandığını, nasıl kullanıldığını ve nasıl korunduğunu açıklar.</p>
 
-    <!-- ================= TR ================= -->
-    <div id="tr" class="content active">
-        <h1>📘 ZenTry – Gizlilik Politikası</h1>
-        <p><strong>Güncelleme Tarihi:</strong> 01.01.2026</p>
+<hr>
 
-        <p>
-            ZenTry, kullanıcı gizliliğini esas alan bir mobil uygulamadır.
-            Uygulama tarafından işlenen tüm veriler yalnızca kullanıcının kendi cihazında tutulur.
-            Herhangi bir sunucuya veri gönderilmez, geliştirici tarafından görüntülenmez
-            ve üçüncü taraflarla paylaşılmaz.
-        </p>
+<h2>1. Toplanan Bilgiler</h2>
 
-        <h2>1. Toplanan Bilgiler</h2>
+<h3>1.1 Kullanıcı Tarafından Sağlanan Bilgiler</h3>
+<ul>
+    <li>Kullanıcı adı</li>
+    <li>E-posta adresi</li>
+    <li>İsteğe bağlı profil bilgileri</li>
+</ul>
 
-        <h3>1.1 Profil Bilgileri</h3>
-        <ul>
-            <li>İsteğe bağlı: Kullanıcı adı</li>
-            <li>İsteğe bağlı: E-posta adresi</li>
-            <li>Profil fotoğrafı</li>
-        </ul>
-        <p>Bu bilgiler yalnızca cihaz içinde saklanır.</p>
+<hr>
 
-        <hr>
+<h3>1.2 Doğrulama Bilgileri</h3>
+<p>
+ZenTry uygulamasında kullanıcı doğrulaması <strong>yalnızca e-posta adresi</strong> üzerinden yapılır.
+Doğrulama amacıyla kullanıcının e-posta adresine tek kullanımlık bir onay kodu gönderilir.
+Kullanıcı bu kodu manuel olarak uygulama içerisine girerek doğrulama işlemini tamamlar.
+</p>
 
-        <h3>1.2 Mesaj İçerikleri</h3>
-        <ul>
-            <li>Kullanıcı tarafından yazılan metinler</li>
-            <li>Encode / Decode edilen mesajlar</li>
-            <li>Kullanıcının isteğe bağlı olarak kaydettiği tek encode kaydı</li>
-        </ul>
-        <p>Tüm mesaj işlemleri cihaz içinde ve offline olarak yapılır.</p>
+<p>
+<strong>Uygulama SMS göndermez, almaz veya telefon numarası üzerinden doğrulama yapmaz.</strong>
+</p>
 
-        <hr>
+<hr>
 
-        <h3>1.3 Rehber Bilgileri (İzin Verilirse)</h3>
-        <ul>
-            <li>Ad Soyad</li>
-            <li>Telefon numarası</li>
-            <li>E-posta adresi (cihaz destekliyorsa)</li>
-        </ul>
-        <p>
-            Rehber bilgileri yalnızca kullanıcının hızlı seçim yapmasını
-            sağlamak amacıyla cihaz içinde kullanılır.
-        </p>
+<h3>1.3 Otomatik Olarak Toplanan Bilgiler</h3>
+<ul>
+    <li>Uygulama içi teknik hata kayıtları</li>
+    <li>Cihaz türü ve işletim sistemi bilgileri (kişisel veri içermez)</li>
+</ul>
 
-        <hr>
+<hr>
 
-        <h3>1.4 Kamera / Galeri</h3>
-        <p>
-            Kamera ve galeri erişimi yalnızca profil fotoğrafı çekmek
-            veya seçmek amacıyla kullanılır.
-            Fotoğraflar cihaz dışına aktarılmaz.
-        </p>
+<h2>2. Bilgilerin Kullanım Amacı</h2>
+<ul>
+    <li>Kullanıcı hesabının oluşturulması ve yönetilmesi</li>
+    <li>E-posta tabanlı kullanıcı doğrulamasının sağlanması</li>
+    <li>Uygulama güvenliğinin artırılması</li>
+    <li>Teknik sorunların giderilmesi</li>
+</ul>
 
-        <hr>
+<hr>
 
-        <h3>1.5 E-Posta Doğrulama</h3>
-        <ul>
-            <li>Hesap doğrulaması e-posta adresi üzerinden yapılır</li>
-            <li>Doğrulama kodu harici bir e-posta servisi aracılığıyla gönderilir</li>
-            <li>Kod kullanıcı tarafından manuel olarak girilir</li>
-            <li>Girilen kod yalnızca cihaz içinde doğrulanır</li>
-        </ul>
+<h2>3. Bilgilerin Paylaşımı</h2>
+<p>
+ZenTry, kullanıcı bilgilerini üçüncü taraflarla satmaz veya paylaşmaz.
+Yalnızca yasal yükümlülükler kapsamında yetkili mercilerle paylaşım yapılabilir.
+</p>
 
-        <h2>2. Verilerin Kullanım Amaçları</h2>
-        <ul>
-            <li>Encode / Decode işlemlerini gerçekleştirmek</li>
-            <li>Mesaj güvenliğini sağlamak</li>
-            <li>Profil bilgilerinin uygulamada görüntülenmesi</li>
-            <li>Rehber üzerinden hızlı seçim yapılması</li>
-            <li>WhatsApp, e-posta veya diğer uygulamalara mesaj aktarımı</li>
-            <li>Kullanıcının manuel olarak girdiği e-posta doğrulama kodunun kontrolü</li>
-        </ul>
+<hr>
 
-        <h2>3. Veri Saklama</h2>
-        <ul>
-            <li>Tüm veriler yalnızca kullanıcının cihazında saklanır</li>
-            <li>Sunucuya gönderilen hiçbir kişisel veri bulunmaz</li>
-            <li>Uygulama kaldırıldığında tüm veriler cihazdan silinir</li>
-        </ul>
+<h2>4. Veri Güvenliği</h2>
+<p>
+Kullanıcı verileri, yetkisiz erişime karşı korunur.
+E-posta doğrulama kodları geçici olarak kullanılır ve doğrulama sonrası saklanmaz.
+</p>
 
-        <h2>4. Mesaj Güvenliği</h2>
-        <p>
-            ZenTry’de tüm şifreleme işlemleri tamamen offline olarak gerçekleştirilir.
-            Uygulamada loglama, arka kapı veya gizli veri toplama mekanizması bulunmaz.
-        </p>
+<hr>
 
-        <h2>5. Üçüncü Taraf Hizmetleri</h2>
-        <ul>
-            <li>WhatsApp</li>
-            <li>E-posta uygulamaları</li>
-            <li>Diğer paylaşım uygulamaları</li>
-        </ul>
+<h2>5. Kullanıcı Hakları</h2>
+<ul>
+    <li>Bilgilerini görüntüleme</li>
+    <li>Bilgilerini güncelleme</li>
+    <li>Hesabını silme</li>
+</ul>
 
-        <h2>6. Kullanıcı Hakları (KVKK / GDPR)</h2>
-        <ul>
-            <li>Kendi verilerini görüntüleme</li>
-            <li>Yanlış bilgileri düzeltme</li>
-            <li>Profil ve kayıtlı verileri silme</li>
-            <li>Uygulamayı kaldırarak tüm verileri tamamen silme</li>
-        </ul>
+<hr>
 
-        <h2>7. Güvenlik</h2>
-        <p>
-            ZenTry, kullanıcı verilerini cihaz içinde korumak için
-            standart mobil güvenlik yöntemlerini uygular.
-        </p>
+<h2>6. İletişim</h2>
+<p>
+Gizlilik politikası ile ilgili sorularınız için bizimle iletişime geçebilirsiniz:
+<br>
+<strong>E-posta:</strong> support@zentry.app
+</p>
 
-        <h2>8. Politika Değişiklikleri</h2>
-        <p>
-            Gizlilik Politikası gerektiğinde güncellenebilir.
-            Güncellemeler yayınlandığı anda yürürlüğe girer.
-        </p>
+<hr>
 
-        <h2>9. İletişim</h2>
-        <p>E-mail: <strong>zentryencode@gmail.com</strong></p>
-    </div>
+<h1>ZenTry – Privacy Policy</h1>
 
-    <!-- ================= EN ================= -->
-    <div id="en" class="content">
-        <h1>📘 ZenTry – Privacy Policy</h1>
-        <p><strong>Last Updated:</strong> 01.01.2026</p>
+<p>ZenTry values user privacy. This Privacy Policy explains what information is collected, how it is used, and how it is protected when using the ZenTry application.</p>
 
-        <p>
-            ZenTry is a privacy-focused mobile application.
-            All data processed by the app remains strictly on the user's device.
-            No personal data is sent to any server, accessed by the developer,
-            or shared with third parties.
-        </p>
+<hr>
 
-        <h2>1. Information Collected</h2>
+<h2>1. Information We Collect</h2>
 
-        <h3>1.1 Profile Information</h3>
-        <ul>
-            <li>Optional: Username</li>
-            <li>Optional: Email address</li>
-            <li>Profile photo</li>
-        </ul>
+<h3>1.1 Information Provided by the User</h3>
+<ul>
+    <li>Username</li>
+    <li>Email address</li>
+    <li>Optional profile information</li>
+</ul>
 
-        <hr>
+<hr>
 
-        <h3>1.2 Message Content</h3>
-        <ul>
-            <li>User-written messages</li>
-            <li>Encoded / decoded messages</li>
-            <li>Optional saved encoded record</li>
-        </ul>
+<h3>1.2 Verification Information</h3>
+<p>
+User verification in ZenTry is performed <strong>only via email</strong>.
+A one-time verification code is sent to the user’s email address.
+The user manually enters this code into the application to complete verification.
+</p>
 
-        <hr>
+<p>
+<strong>The application does not send or receive SMS messages and does not perform phone number verification.</strong>
+</p>
 
-        <h3>1.3 Contacts (If Permitted)</h3>
-        <ul>
-            <li>Name and surname</li>
-            <li>Phone number</li>
-            <li>Email address (if supported)</li>
-        </ul>
+<hr>
 
-        <hr>
+<h3>1.3 Automatically Collected Information</h3>
+<ul>
+    <li>Application error logs</li>
+    <li>Device and operating system information (non-personal)</li>
+</ul>
 
-        <h3>1.4 Camera / Gallery</h3>
-        <p>
-            Used only to capture or select a profile photo.
-            Images remain stored locally on the device.
-        </p>
+<hr>
 
-        <hr>
+<h2>2. Purpose of Using Information</h2>
+<ul>
+    <li>Account creation and management</li>
+    <li>Email-based user verification</li>
+    <li>Improving application security</li>
+    <li>Resolving technical issues</li>
+</ul>
 
-        <h3>1.5 Email Verification</h3>
-        <ul>
-            <li>Account verification is performed via email</li>
-            <li>Verification codes are sent through an external email service</li>
-            <li>The code is entered manually by the user</li>
-            <li>Verification is performed locally on the device</li>
-        </ul>
+<hr>
 
-        <h2>2. Purpose of Data Usage</h2>
-        <ul>
-            <li>Perform encode / decode operations</li>
-            <li>Ensure message security</li>
-            <li>Display profile information</li>
-            <li>Enable quick contact selection</li>
-            <li>Share messages via email, WhatsApp, or other apps</li>
-            <li>Validate manually entered email verification codes</li>
-        </ul>
+<h2>3. Data Sharing</h2>
+<p>
+ZenTry does not sell or share user information with third parties.
+Data may only be shared if required by law.
+</p>
 
-        <h2>3. Data Storage</h2>
-        <ul>
-            <li>All data is stored locally on the device</li>
-            <li>No personal data is transmitted to servers</li>
-            <li>All data is deleted when the app is uninstalled</li>
-        </ul>
+<hr>
 
-        <h2>4. Message Security</h2>
-        <p>
-            All encryption is performed offline.
-            ZenTry contains no logging, backdoors, or hidden data collection.
-        </p>
+<h2>4. Data Security</h2>
+<p>
+User data is protected against unauthorized access.
+Email verification codes are temporary and are not stored after verification.
+</p>
 
-        <h2>5. Third-Party Services</h2>
-        <ul>
-            <li>WhatsApp</li>
-            <li>Email applications</li>
-            <li>Other sharing apps</li>
-        </ul>
+<hr>
 
-        <h2>6. User Rights (GDPR)</h2>
-        <ul>
-            <li>Access personal data</li>
-            <li>Correct inaccurate information</li>
-            <li>Delete stored data</li>
-            <li>Remove all data by uninstalling the app</li>
-        </ul>
+<h2>5. User Rights</h2>
+<ul>
+    <li>Access personal data</li>
+    <li>Update personal data</li>
+    <li>Delete account</li>
+</ul>
 
-        <h2>7. Security</h2>
-        <p>
-            ZenTry applies standard mobile security practices
-            to protect user data stored on the device.
-        </p>
+<hr>
 
-        <h2>8. Policy Changes</h2>
-        <p>
-            This Privacy Policy may be updated when necessary.
-            Changes become effective upon publication.
-        </p>
-
-        <h2>9. Contact</h2>
-        <p>Email: <strong>zentryencode@gmail.com</strong></p>
-    </div>
-
-    <div class="footer">
-        © 2026 ZenTry
-    </div>
-
-</div>
+<h2>6. Contact</h2>
+<p>
+If you have any questions regarding this Privacy Policy, please contact us:
+<br>
+<strong>Email:</strong> support@zentry.app
+</p>
 
 </body>
 </html>
